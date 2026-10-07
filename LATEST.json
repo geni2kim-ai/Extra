@@ -1,0 +1,14 @@
+{
+  "schema_version": "EXTRA-AGENT-OTP-LATEST-2",
+  "date": "2026-10-07",
+  "version": "R9B.2",
+  "path": "Agent_OTP_R9B2_FULL",
+  "status": "READY_FOR_YM_PREPROVISIONED_REGISTRY_REHEARSAL",
+  "measurement_ceiling": "MEASURED_NOT_AUTHENTICATED",
+  "stable_node_id": "UNBOUND",
+  "g1": "CLOSED",
+  "f2": "CLOSED",
+  "original_local_zip_sha256": "8272f9e7d1788719da7054a9cc6ba83f23bec613ef572092ae8cb8a258b18d13",
+  "public_safe_archival_zip_sha256": "516fa450f48dd3162832b68f31c3b36df026267cea68dabaf1d906f09b873e2b",
+  "codediff_publication_feedback_commit": "ffac2e1309f565ff0fb139c42b6405013dd17497"
+}

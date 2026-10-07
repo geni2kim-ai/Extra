@@ -1,0 +1,14 @@
+{
+  "schema_version": "AGENT-OTP-R9B2-MULTIPART-BUNDLE-1",
+  "version": "R9B.2",
+  "date": "2026-10-07",
+  "part_count": 7,
+  "part_size_chars": 12000,
+  "payload_encoding": "base64(gzip(tar))",
+  "archive_sha256": "0d89539d18d13fec212548a0b250861fcd35cfc85c7a44de5b57804cbd3a6021",
+  "tar_sha256": "4ad50f4cc52db1caf6832024e81635e717c34d622640c9a13267db43baf9d883",
+  "extracted_manifest_sha256": "d8e6796a882bb173a956b8062ababfae66c3ccccc1e416e55161dafeceeea7f7",
+  "file_count": 71,
+  "authority_effect": "NONE",
+  "measurement_ceiling": "MEASURED_NOT_AUTHENTICATED"
+}

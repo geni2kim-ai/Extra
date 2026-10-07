@@ -1,13 +1,11 @@
-# Extra — Agent OTP / Synapse public package checkpoint
+# Extra — Agent OTP / Synapse R9B.2 Full Package
 
-Latest public-safe full package: **R9B.2 pre-provisioned pinned registry measurement**  
-Checkpoint date: **2026-10-07**
+Current consolidated version: **R9B.2 pre-provisioned pinned registry measurement**  
+Checkpoint: **2026-10-07**
 
-## Current status
+## Status
 
-`R9B1_LOCAL_MEASUREMENT_PASS`
-→ `REGISTRY_SELF_ENROLLMENT_GAP_FOUND`
-→ `R9B2_PREPROVISIONED_PINNED_REGISTRY_READY`
+`R9B1_LOCAL_MEASUREMENT_PASS` → `R9B2_PREPROVISIONED_PINNED_REGISTRY_READY`
 
 Security ceiling remains:
 
@@ -18,42 +16,29 @@ Security ceiling remains:
 - `G1 = CLOSED`
 - `F2 = CLOSED`
 
-R9B.2 separates registry provisioning from measurement and requires an **exact SHA-256 pin** for the pre-provisioned
-verifier registry. It is still a rehearsal/measurement layer, not a protected installation credential.
+## Full source package
 
-## Package layout
+The current self-contained source package is stored under [`Agent_OTP_R9B2_FULL_BUNDLE/`](Agent_OTP_R9B2_FULL_BUNDLE/) as a verified multipart text bundle. Run `python Agent_OTP_R9B2_FULL_BUNDLE/extract_full_package.py` to reconstruct `Agent_OTP_R9B2_FULL/`.
+It contains the components required by the latest R9B.2 flow:
 
-- `packages/synapse_boot_auth_r9b2_preprovisioned_registry_measurement_20261007/`
-  - complete extracted public-safe package
-  - candidate source
-  - handoff packets
-  - review/evidence layer
-  - tests/lints/CodeDiff artifacts
-  - manifest
-- `releases/synapse_boot_auth_r9b2_preprovisioned_registry_measurement_20261007_PUBLIC_SAFE.zip`
-  - downloadable public-safe full ZIP
+- R6 Named Pipe verifier/capture boundary
+- R9A.3 native handle-bound mediator evidence
+- R9A.3.1 portable matrix runner
+- R9B.1 dedicated mediator Named Pipe measurement
+- R9B.2 pre-provisioned verifier registry + exact SHA-256 pin
+- evaluators, tests, privacy/masking helpers, semantic lint and YM handoff packets
+- closeout/result/lineage and regenerated package manifest
 
-## Integrity
+## Integrity references
 
-Original local package SHA-256:
+Original local R9B.2 package SHA-256: `8272f9e7d1788719da7054a9cc6ba83f23bec613ef572092ae8cb8a258b18d13`
 
-`8272f9e7d1788719da7054a9cc6ba83f23bec613ef572092ae8cb8a258b18d13`
+Public-safe archival ZIP SHA-256: `516fa450f48dd3162832b68f31c3b36df026267cea68dabaf1d906f09b873e2b`
 
-Public-safe ZIP SHA-256:
+The public-safe artifact differs only because historical local-workspace literals in accumulated old patch/log evidence were redacted before public publication. The consolidated current source package here omits those historical patch archives entirely.
 
-`516fa450f48dd3162832b68f31c3b36df026267cea68dabaf1d906f09b873e2b`
-
-The SHA values differ intentionally. Before publishing to this **public** repository, historical accumulated
-patch/log evidence containing a local workspace literal was redacted to `<LOCAL_WORKSPACE>`. Functional source was
-not altered by this publication redaction.
-
-Redacted historical occurrences: **5**
-
-CodeDiff privacy feedback for this publication:
-
-`PR-with-codediff-finder@ffac2e1309f565ff0fb139c42b6405013dd17497`
+Publication privacy feedback: `PR-with-codediff-finder@ffac2e1309f565ff0fb139c42b6405013dd17497`
 
 ## Trust note
 
-CodeDiff remains a degraded SHADOW sensor in this package (`trusted_for_gate=false`). It is a risk/evidence sensor,
-not an approval authority.
+CodeDiff remains a degraded SHADOW sensor (`trusted_for_gate=false`). It is not an approval authority. R9B.2 is still measurement/rehearsal; protected installation credential work has not been activated.
