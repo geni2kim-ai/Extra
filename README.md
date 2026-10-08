@@ -1,11 +1,18 @@
-# Extra — Agent OTP / Synapse R9B.2 Full Package
+# Extra — Agent OTP / Synapse Packages
 
-Current consolidated version: **R9B.2 pre-provisioned pinned registry measurement**  
-Checkpoint: **2026-10-07**
+Current latest consolidated package: **R9B.4.5 review-evidence precision / replay binding**  
+Checkpoint: **2026-10-08**
 
-## Status
+## Latest
 
-`R9B1_LOCAL_MEASUREMENT_PASS` → `R9B2_PREPROVISIONED_PINNED_REGISTRY_READY`
+See [`Agent_OTP_R9B45_LATEST/`](Agent_OTP_R9B45_LATEST/).
+
+Current state:
+
+- `R9B45_REVIEW_EVIDENCE_PRECISION_STATIC_CANDIDATE`
+- `FRESH_WINDOWS_EVALUATION_REQUIRED`
+- `HUMAN_VERDICT_PENDING`
+- `R9C_BLOCKED`
 
 Security ceiling remains:
 
@@ -13,32 +20,27 @@ Security ceiling remains:
 - `stable_node_id = UNBOUND`
 - `authorization_status = NOT_AUTHORIZED`
 - `authority_effect = NONE`
-- `G1 = CLOSED`
-- `F2 = CLOSED`
 
-## Full source package
+Latest public-safe ZIP SHA-256:
 
-The current self-contained source package is stored under [`Agent_OTP_R9B2_FULL_BUNDLE/`](Agent_OTP_R9B2_FULL_BUNDLE/) as a verified multipart text bundle. Run `python Agent_OTP_R9B2_FULL_BUNDLE/extract_full_package.py` to reconstruct `Agent_OTP_R9B2_FULL/`.
-It contains the components required by the latest R9B.2 flow:
+`a48d5df8234a9fb9a6c296b09d0cf7c985dcca43e3d91b0e6880131a149b75d4`
 
-- R6 Named Pipe verifier/capture boundary
-- R9A.3 native handle-bound mediator evidence
-- R9A.3.1 portable matrix runner
-- R9B.1 dedicated mediator Named Pipe measurement
-- R9B.2 pre-provisioned verifier registry + exact SHA-256 pin
-- evaluators, tests, privacy/masking helpers, semantic lint and YM handoff packets
-- closeout/result/lineage and regenerated package manifest
+Original local sealed ZIP SHA-256:
 
-## Integrity references
+`f183a27b883f48e10be52f0584685143c2a5a8c562a8d34506c309fa516ec96d`
 
-Original local R9B.2 package SHA-256: `8272f9e7d1788719da7054a9cc6ba83f23bec613ef572092ae8cb8a258b18d13`
+The public-safe derivative changes only a stale local temporary path in historical test evidence and regenerates affected manifests. It does not change protocol/source semantics.
 
-Public-safe archival ZIP SHA-256: `516fa450f48dd3162832b68f31c3b36df026267cea68dabaf1d906f09b873e2b`
+## Historical package
 
-The public-safe artifact differs only because historical local-workspace literals in accumulated old patch/log evidence were redacted before public publication. The consolidated current source package here omits those historical patch archives entirely.
+The prior **R9B.2** package remains archived under [`Agent_OTP_R9B2_FULL_BUNDLE/`](Agent_OTP_R9B2_FULL_BUNDLE/).
 
-Publication privacy feedback: `PR-with-codediff-finder@ffac2e1309f565ff0fb139c42b6405013dd17497`
+## Review baseline
 
-## Trust note
+CodeDiff v2.6 reviewed baseline:
 
-CodeDiff remains a degraded SHADOW sensor (`trusted_for_gate=false`). It is not an approval authority. R9B.2 is still measurement/rehearsal; protected installation credential work has not been activated.
+`hardening/v2.6 @ 41369e4a94ee9ab85c48ba117319658248e59ece`
+
+Harness Full Validation **#153 / #154 SUCCESS**.
+
+CodeDiff is a review/sensor layer, not approval authority.

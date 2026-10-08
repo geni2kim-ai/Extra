@@ -1,0 +1,37 @@
+{
+  "schema_version": "EXTRA-AGENT-OTP-R9B45-PACKAGE-1",
+  "published_date": "2026-10-08",
+  "version": "R9B.4.5",
+  "package_file": "synapse_boot_auth_r9b45_review_precision_replay_evidence_20261008_PUBLIC_SAFE.zip",
+  "source_local_zip_sha256": "f183a27b883f48e10be52f0584685143c2a5a8c562a8d34506c309fa516ec96d",
+  "public_safe_zip_sha256": "a48d5df8234a9fb9a6c296b09d0cf7c985dcca43e3d91b0e6880131a149b75d4",
+  "github_git_blob_sha": "b324cb10bfa0be2dc6e9fdb3da27f300e4527fe5",
+  "public_safe_size_bytes": 556893,
+  "source_candidate_manifest_sha256": "1f52a417b2b82e6457c8d005ea2ddfc5a8c47e54e7917123107118e293507dc4",
+  "public_candidate_manifest_sha256": "6fb8cdacf9f1f17fcbd25e0eb4ba5f4d1e51209e8981e87e690e53bfaa4d6cd0",
+  "public_safe_derivation": {
+    "scope": "EVIDENCE_LOG_PATH_REDACTION_ONLY",
+    "redaction": "legacy temporary preparation directory -> <LOCAL_TEMP>/",
+    "semantic_code_change": false,
+    "runtime_protocol_change": false,
+    "public_privacy_findings": 0
+  },
+  "state": {
+    "status": "R9B45_REVIEW_EVIDENCE_PRECISION_STATIC_CANDIDATE",
+    "fresh_windows_evaluation_required": true,
+    "human_verdict": "PENDING",
+    "r9c": "BLOCKED",
+    "authentication_result": "MEASURED_NOT_AUTHENTICATED",
+    "stable_node_id": "UNBOUND",
+    "authorization_status": "NOT_AUTHORIZED",
+    "authority_effect": "NONE"
+  },
+  "codediff_v26": {
+    "baseline_commit": "41369e4a94ee9ab85c48ba117319658248e59ece",
+    "full_validation_runs": [
+      153,
+      154
+    ],
+    "approval_authority": false
+  }
+}
